@@ -30,7 +30,18 @@ public class Circle {
 	
 	@Override
 	public String toString() {
-		return "Center:" + center + "," + " radius:" + " " + r;
+		return "Center:" + center + ", " + " radius: " + r;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Circle) {
+			Circle temp = (Circle) obj;
+			if (center.equals(temp.getCenter()) && r==temp.getR()){
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	public Point getCenter() {

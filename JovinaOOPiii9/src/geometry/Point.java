@@ -26,12 +26,6 @@ public class Point {
 		double d = Math.sqrt(dX*dX + dY*dY);
 		return d;
 	}
-	/*
-	@Override
-	public String toString() {
-		return "(" + x + ", " + y + ")";
-	}
-*/
 	
 	@Override
 	public String toString() {
@@ -62,8 +56,8 @@ public class Point {
 		return y;
 	}
 
-	public void setY(int newY) {
-		y = newY;
+	public void setY(int y) {
+		this.y= y;
 	}
 
 	public boolean getSelected() {
